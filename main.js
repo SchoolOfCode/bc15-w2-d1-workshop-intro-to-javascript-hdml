@@ -112,7 +112,7 @@ switch (accountStatus) {
     console.log(
       "How embarrassing, something went wrong and we can't tell if it's you or us. You'll be unable to access our services, but please try again later."
     );
-};
+}
 
 // Final Ticket
 
@@ -120,15 +120,23 @@ let score = 55; // try using different numbers out of 100
 let subject = "Maths"; // try using different subjects
 let criticalSubject = true; // try using false
 if (criticalSubject && score >= 95) {
-  console.log(`Phenomenal work in ${subject}! You've reached a critical milestone.`);
-}else if (score >= 90 && !criticalSubject) {
-  console.log(`Great job in ${subject}! It's non-critical but still impressive.`);
-}else if (score >= 70 && criticalSubject) {
-  console.log(`Keep up the good work! ${subject} is critical, so keep working on improvements.`);
-}else if (score >= 60 && criticalSubject) {
-    console.log(`Nice job, keep up the good work in ${subject}!`);
-}else if (criticalSubject) {
-  console.log(`You've scored ${score} out of 100, so keep trying! It's critical to do well in ${subject}. Make a list of the topics you're struggling with and systematically tackle them one by one.`);
-}else {
+  console.log(
+    `Phenomenal work in ${subject}! You've reached a critical milestone.`
+  );
+} else if (score >= 90 && !criticalSubject) {
+  console.log(
+    `Great job in ${subject}! It's non-critical but still impressive.`
+  );
+} else if (score >= 70 && criticalSubject) {
+  console.log(
+    `Keep up the good work! ${subject} is critical, so keep working on improvements.`
+  );
+} else if (score >= 60 && criticalSubject) {
+  console.log(`Nice job, keep up the good work in ${subject}!`);
+} else if (criticalSubject) {
+  console.log(
+    `You've scored ${score} out of 100, so keep trying! It's critical to do well in ${subject}. Make a list of the topics you're struggling with and systematically tackle them one by one.`
+  );
+} else {
   console.log(`Keep trying!`);
-};
+}
